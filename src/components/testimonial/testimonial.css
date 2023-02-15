@@ -1,0 +1,135 @@
+.testimonial {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 3rem;
+    justify-content: space-evenly;
+    width: auto;
+    height: 40vh;
+  
+}
+
+
+.testimony-btn {
+    background-color: var(--cream);
+    border-style: none;
+    font-size: 1.2rem;
+    color: var(--blue);
+    transition: all 0.3s;
+}
+
+.testimony-btn:hover {
+    transform: scale(1.7);
+}
+
+
+.testimony-items {
+    display: flex;
+    flex-direction: row;
+   
+}
+
+.test-main {
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    width: 25vw;
+    gap: .2rem;
+}
+
+
+
+.hero-text.test-text {
+    font-size: .5rem;
+}
+
+.test-text{
+    padding: 0 !important;
+    margin: 0  !important;
+    font-size: 1.5rem  !important;
+    text-align: start;
+}
+
+#test-text{
+    padding: 0 !important;
+    margin: 0  !important;
+    font-size: 1rem  !important;
+    text-align: start;
+}
+
+.t-info {
+    width: 100%;
+}
+
+.t-text {
+    font-size: 1rem;
+}
+
+.testimony-item {
+    width: 50vw;
+    background-color: var(--cream);
+    height: auto;
+    padding: .5rem;
+    display: flex;
+    flex-direction: row;
+    gap: .5rem;
+    align-items: center;
+    border-style: solid;
+    justify-content: center;
+    border-width: 0.3px;
+    border-radius: 10px;
+    border-color: var(--blue);
+    font-size: .9rem;
+    text-align: start;
+    color: var(--darkblue);
+    box-shadow: 1.5px 1.5px 1.5px var(--blue);
+
+}
+
+.testimony-item i{
+    color: var(--blue);
+}
+
+.t-item-description {
+    color: var(--blue);
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.t-item-name, .t-item-role {
+    color: var(--grey);
+    font-size: .9rem;
+}
+
+
+
+
+.t-profile {
+    width: 7rem;
+    height: 7rem;
+    border-radius: 100%;
+    padding: 1rem;
+
+}
+
+@media screen and (max-width:767px) {
+    .testimonial {
+        flex-direction: column;
+        width: auto;
+        height: 70vh;
+        margin-bottom: 3rem;
+        margin-top: 2rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+
+    .test-main {
+        width: auto;
+    }
+
+    .testimony-item, .testimony-items {
+        width: auto;
+    }
+
+}

@@ -1,0 +1,41 @@
+:root {
+    --blue: #0088ff;
+    --buttonblue: ##0088ff
+    --darkblue: #1063b3;
+    --grey: #575757;
+    --maroon: #ea0208;
+    --cream: #f9fcfe;
+
+  }
+
+.App {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 2rem;
+
+}
+
+
+body {
+    background-color: #dff0fb2d;
+}
+
+* {
+    padding: 0;
+}
+
+h1, h4, h5, h6 {
+    margin: 0;
+    padding-top: .5rem;
+}
+
+
+@media screen and (max-width:767px) {
+    .App {
+        width: 100%;
+        gap: 1rem;
+    }
+    
+}
