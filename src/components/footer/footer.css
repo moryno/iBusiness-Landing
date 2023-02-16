@@ -14,7 +14,7 @@
     flex: 1;
 }
 
-.contact-info {
+.about-sec {
     flex: 1;
 }
 
@@ -36,7 +36,7 @@
 }
 
 
-.contact-info p {
+.about-sec p {
     width: 75%;
     word-spacing: .1rem;
 }
@@ -90,18 +90,17 @@
 
 @media screen and (max-width:767px) {
 .footer {
-        height: 100vh;
-        padding-left: 5rem;
-        padding-right: 5rem;
+        height: 80vh;
+        padding-left: 1rem;
+        padding-right: 1rem;
         display: flex;
         flex-direction: column;
-        justify-items: center;
         gap: 1rem;
         width: auto;
 
 }
 
-.contact-info p {
+.about-sec p {
     width: 100%;
     word-spacing: .1rem;
 }
