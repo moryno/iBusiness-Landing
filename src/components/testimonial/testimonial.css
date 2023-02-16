@@ -112,15 +112,16 @@
 
 }
 
-@media screen and (max-width:767px) {
+@media screen and (max-width:1200px) {
     .testimonial {
         flex-direction: column;
         width: auto;
         height: 70vh;
         margin-bottom: 3rem;
         margin-top: 2rem;
-        padding-left: 1rem;
-        padding-right: 1rem;
+        margin-left: 1rem;
+        margin-right: 1rem;
+
     }
 
 
@@ -130,6 +131,8 @@
 
     .testimony-item, .testimony-items {
         width: auto;
+        padding-right: 1rem;
+        padding-left: 1rem;
     }
 
 }

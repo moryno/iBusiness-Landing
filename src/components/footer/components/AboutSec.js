@@ -4,7 +4,7 @@ import data from '../../..//data/footer'
 
 export const AboutSec = () => {
   return (
-    <div className='contact-info'>
+    <div className='about-sec'>
         <h4 className='footer-header blue'>{ data.about.title }</h4>
         <p className='abt-description'>{ data.about.description }</p>
         <br /><br /> 

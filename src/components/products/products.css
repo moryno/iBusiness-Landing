@@ -49,6 +49,7 @@
     border-color: var(--blue);
     font-size: 1.3rem;
     box-shadow: 1.5px 1.5px 1.5px var(--blue);
+    transition: all .2s ease-in-out;
 
 }
 
@@ -112,7 +113,7 @@
     border-style: none;
 }
 
-@media screen and (max-width:767px) {
+@media screen and (max-width:1200px) {
     .products {
         padding-left: 1rem;
         padding-right: 1rem;
@@ -155,9 +156,8 @@
         color: var(--blue);
         word-spacing: 1px;
         text-align: start !important;
-        flex: 2;
         padding: 0 !important;
-        text-align: start;
+
     }
 
 }

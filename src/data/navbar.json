@@ -1,0 +1,8 @@
+{
+    "navmobilecontent" : {
+        "links" : [ "Products", "Company", "Our story", "Product guide", "Sign in", "Get started", "FAQ", "Support", "Privacy" ]
+    },
+    "navlinks" : [ "Products", "Company", "Support" ],
+    "actionbutton" : "Get Started",
+    "signuptext" : "Sign Up"
+}
