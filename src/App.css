@@ -35,7 +35,7 @@ h1, h4, h5, h6 {
 @media screen and (max-width:767px) {
     .App {
         width: 100%;
-        gap: 1rem;
+        gap: 3rem;
     }
     
 }

@@ -1,8 +1,22 @@
 {
     "navmobilecontent" : {
-        "links" : [ "Products", "Company", "Our story", "Product guide", "Sign in", "Get started", "FAQ", "Support", "Privacy" ]
+        "links" : [ 
+            { "key" : "1", "to" : "/products", "value" : "Products" },
+            { "key" : "2", "to" : "/company", "value" : "Company" },
+            { "key" : "3", "to" : "/our-story", "value" : "Our story" },
+            { "key" : "4", "to" : "/product-guide", "value" : "Product guide" },
+            { "key" : "5", "to" : "/sign-in", "value" : "Sign in" },
+            { "key" : "6", "to" : "/get-started", "value" : "Get started" },
+            { "key" : "7", "to" : "/FAQ", "value" : "FAQ" },
+            { "key" : "8", "to" : "/support", "value" : "Support" },
+            { "key" : "9", "to" : "/privacy", "value" : "Privacy" }
+        ]
     },
-    "navlinks" : [ "Products", "Company", "Support" ],
-    "actionbutton" : "Get Started",
-    "signuptext" : "Sign Up"
+    "navlinks" : [ 
+                    { "key" : "1", "to": "/products", "value" : "Products"},
+                    { "key" : "2", "to" : "/company", "value" : "Company"},
+                    { "key" : "3", "to" : "/support", "value" : "Support"} 
+                 ],
+    "actionbutton" : { "to" : "/get-started", "value" : "Get started" },
+    "signuptext" : { "to": "/sign-in", "value" : "Sign in" }
 }

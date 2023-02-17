@@ -13,12 +13,34 @@
     font-size: 1.5rem;
 }
 
+.products-div {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    overflow: visible;
+    align-items: center;
+    transition: all 0.5s ease-in-out;
+
+
+    
+}
+
+.carousel-slide {
+    display: flex;
+    flex-direction: row;
+    gap: 4rem;
+    width: auto;
+    padding: 1rem;
+}
+
 .product-items {
     display: flex;
     flex-direction: row;
-    gap: 5rem;
-    flex-wrap: wrap;
+    gap: 4.5rem;
+    flex-wrap: nowrap;
+    overflow: hidden;
     align-items: center;
+    width: 1015px;
 }
 
 
@@ -35,7 +57,7 @@
 }
 
 .product-item {
-    width: 17vw;
+    width: 220px;
     display: flex;
     gap: 1rem;
     padding: 2rem;
@@ -43,13 +65,14 @@
     justify-content: center;
     text-align: center;
     height: 30vh;
+    flex-shrink: 0;
     border-radius: 1rem;
     border-style: solid;
     border-width: 1px;
     border-color: var(--blue);
     font-size: 1.3rem;
     box-shadow: 1.5px 1.5px 1.5px var(--blue);
-    transition: all .2s ease-in-out;
+    background-color: rgba(237, 237, 237, 0.364);
 
 }
 
@@ -105,9 +128,17 @@
     color: var(--blue);
 }
 
-.btn-previous, .btn-next {
+.btn-previous {
+    left: 5%;
+}
+.btn-next {
+    right: 5%;
+}
+.btn-next, .btn-previous {
     height: max-content;
+    position: absolute;
     background-color: var(--cream);
+    width: 5vw;
     color: var(--blue);
     font-size: 1.5rem;
     border-style: none;
@@ -119,6 +150,7 @@
         padding-right: 1rem;
         transform: scale(0.9);
         align-items: center;
+        margin-top: -15vh;
     }
 
     .hero-lgheader {
@@ -140,7 +172,6 @@
     }
 
     .product-item {
-        width: auto;
         display: flex;
         gap: 1rem;
         flex-direction: column;
@@ -148,6 +179,7 @@
         text-align: center;
         height: auto;
         font-size: 1.3rem;
+        width: auto;
     }
     
     .hero-text {
@@ -155,9 +187,39 @@
         width: 80vw;
         color: var(--blue);
         word-spacing: 1px;
-        text-align: start !important;
         padding: 0 !important;
 
     }
+    
+    .products-div {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        overflow: visible;
+        align-items: center;
+        transform: translateX(0);
+    
+    
+        
+    }
+    
+    .carousel-slide {
+        display: flex;
+        flex-direction: column;
+        gap: 4rem;
+        width: auto;
+        padding: 1rem;
+    }
+    
+    .product-items {
+        display: flex;
+        flex-direction: row;
+        gap: 4.5rem;
+        flex-wrap: nowrap;
+        overflow: hidden;
+        align-items: center;
+        width: 100%;
+    }
+    
 
 }

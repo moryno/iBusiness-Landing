@@ -6,7 +6,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faAngleLeft, faAngleRight } from '@fortawesome/free-solid-svg-icons';
 
 
-const TestimonyItem = (props) => {
+const TestimonyItem = () => {
 
   const [ currentItemIndex, setCurrentItemIndex ] = useState(0);
   const data = testimonies.items;

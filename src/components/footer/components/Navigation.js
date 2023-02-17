@@ -1,5 +1,6 @@
-import React from 'react'
-import data from '../../../data/footer'
+import React from 'react';
+import data from '../../../data/footer';
+import { Link } from 'react-router-dom';
 
 export const Navigation = () => {
   return (
@@ -8,7 +9,7 @@ export const Navigation = () => {
         <br></br>
         <div className='navigation-links'>
             {data.navlinks.links.map(link => (
-              <a className='navigation-link' key={ link } href='/'>{ link }</a>
+              <Link to={ link.to} className='navigation-link' key={ link.key }><a className='navigation-link' href='/'>{ link.value }</a></Link>
             ))}
         </div>
     </div>

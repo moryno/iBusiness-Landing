@@ -1,11 +1,12 @@
 .testimonial {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
-    gap: 3rem;
+    justify-items: center;
+    gap: 1rem;
     justify-content: space-evenly;
     width: auto;
-    height: 40vh;
+    height: auto;
   
 }
 
@@ -26,15 +27,20 @@
 .testimony-items {
     display: flex;
     flex-direction: row;
+    align-items: center;
+    margin-bottom: 1rem;
+
+
    
 }
 
 .test-main {
     display: flex;
     flex-direction: column;
-    text-align: start;
-    width: 25vw;
-    gap: .2rem;
+    text-align: center;
+    align-items: center;
+    width: auto;
+    gap: 1rem;
 }
 
 
@@ -43,12 +49,7 @@
     font-size: .5rem;
 }
 
-.test-text{
-    padding: 0 !important;
-    margin: 0  !important;
-    font-size: 1.5rem  !important;
-    text-align: start;
-}
+
 
 #test-text{
     padding: 0 !important;
@@ -83,6 +84,7 @@
     text-align: start;
     color: var(--darkblue);
     box-shadow: 1.5px 1.5px 1.5px var(--blue);
+    background-color: rgba(237, 237, 237, 0.364);
 
 }
 
@@ -117,8 +119,6 @@
         flex-direction: column;
         width: auto;
         height: 70vh;
-        margin-bottom: 3rem;
-        margin-top: 2rem;
         margin-left: 1rem;
         margin-right: 1rem;
 

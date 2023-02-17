@@ -14,7 +14,17 @@
     },
 
     "navlinks" : {
-         "links" : [ "Home", "Sign Up", "FAQ", "Product Guide", "Usage Terms", "Our Story", "Support", "Privacy", "About Us" ],
+         "links" : [ { "key" : "1", "to": "/", "value" : "Home"}, 
+                     { "key" : "2", "to" : "/sign-in", "value" : "Sign in" },
+                     { "key" : "3", "to" : "/FAQ", "value" : "FAQ" },
+                     { "key" : "4", "to" : "/product-guide", "value" : "Product guide" }, 
+                     { "key" : "5", "to" : "/usage-terms", "value" : "Usage Terms" }, 
+                     { "key" : "6", "to" : "/our-story", "value" : "Our story" },
+                     { "key" : "7", "to" : "/support", "value" : "Support" }, 
+                     { "key" : "8", "to" : "/privacy", "value" : "Privacy" },
+                     { "key" : "9", "to" : "about-us", "value" : "About Us" }
+
+                    ],
          "title" : "Links"
     }
 
