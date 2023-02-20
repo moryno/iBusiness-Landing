@@ -1,24 +1,21 @@
 import React from 'react'
 import './signin.css'
+import data from '../../../data/pages/signin'
 
 export const Header = () => {
   return (
     <div className='signin-header'>
         <div className='signin-info'>
-            <p className='si-header'>Start using iBusiness today</p>
-            <p className='si-description'>Join us today and benefit by using our platform and enjoy services such as:</p>
+            <p className='si-header'>{ data.header }</p>
+            <p className='si-description'>{ data.subheader }</p>
             <ul className='si-list'>
-                <li>Company definition and cost centers</li>
-                <li>Create users and employees</li>
-                <li>Define your accounts and ledgers</li>
-                <li>Manage inventory transactions</li>
-                <li>Manage procure to pay processes</li>
-                <li>Manage order to cash processes</li>
-                <li>Generate reports and analytics</li>
+                {data.functions.map(func => (
+                    <li key={func}>{func}</li>
+                ))}
             </ul>
         </div>
         <div className='signin-form'>
-            <p className='s-subheader'>Enter your information here and click submit</p>
+            <p className='s-subheader'>{ data.s_subheader }</p>
             <div className='s-inputs'>
                     <div className='s-input-names'>
                         <input type='text' placeholder='First name' className='name-control' />

@@ -1,4 +1,4 @@
-import React, { lazy } from 'react'
+import React from 'react'
 import { Header } from '../components/pages/SignIn/Header'
 import { Footer } from '../components/footer/Footer'
 

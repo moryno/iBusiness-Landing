@@ -1,7 +1,8 @@
 import React from 'react'
 import './company.css'
 import illustration from '../../../assets/ill3.png'
-import { Landingbutton } from '../../UI/Button';
+import { Landingbutton } from '../../UI/Button'
+import data from '../../../data/pages/company' 
 
 export const Header = () => {
   return (
@@ -10,8 +11,8 @@ export const Header = () => {
             <img src={illustration} alt='company-illustration'/>
         </div>
         <div className='company-info'>
-            <h4 className='info-header'>About Us</h4>
-            <p className='info-description'>We are a trail-blazing software company whose main aim is to develop exceptional and intelligent cloud-based software products that help you stay ahead of competition.</p>
+            <h4 className='info-header'>{ data.header_section.header }</h4>
+            <p className='info-description'>{ data.header_section.description }</p>
             <Landingbutton value="Read more" id='info-btn'/>
         </div>
     </div>

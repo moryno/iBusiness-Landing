@@ -1,13 +1,15 @@
 import React from 'react'
 import './supportform.css'
 import { Address } from '../contactus/Address'
+import data from '../../data/pages/support'
+
 
 export const SupportForm = () => {
   return (
     <div className='support-form'>
         <div className='s-form'>
-            <p className='hero-header s-header'>Support</p>
-            <p className='s-subheader'>Fill out your contact info. We’ll get in touch ASAP.</p>
+            <p className='hero-header s-header'>{ data.header }</p>
+            <p className='s-subheader'>{ data.subheader }</p>
 
             <div className='s-inputs'>
                 <div className='s-input-names'>

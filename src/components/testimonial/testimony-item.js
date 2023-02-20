@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState } from 'react'
 import './testimonial.css'
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import testimonies from '../../data/testimonial'
