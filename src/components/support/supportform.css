@@ -45,7 +45,7 @@
 .name-control {
     width: 14vw;
     height: 3.5vh;
-    border-radius: 1rem;
+    border-radius: .5rem;
     padding-left: 1rem;
     outline: none;
     border-width: 1px;
@@ -84,8 +84,7 @@
 
 .s-form-control {
     height: 3.5vh;
-
-    border-radius: 1rem;
+    border-radius: .5rem;
     padding-left: 1rem;
     outline: none;
     border-width: 1px;
@@ -95,7 +94,7 @@
 
 .s-textbox {
     height: 10vh;
-    border-radius: 1rem;
+    border-radius: .5rem;
     padding-left: 1rem;
     padding-right: 1rem;
     padding-top: 1rem;

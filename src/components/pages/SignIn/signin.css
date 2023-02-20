@@ -1,0 +1,59 @@
+.signin-header {
+    width: 70vw;
+    height: 70vh;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(237, 237, 237, 0.364);
+    box-shadow: 1px 1px 10px var(--blue);
+    border-radius: 20px;
+
+}
+
+.signup-page {
+    display: flex;
+    justify-content: center;
+}
+
+.signup-info, .signup-form {
+    flex: 1;
+}
+
+.si-header {
+    color: var(--blue);
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-top: 1rem;
+}
+
+.si-description {
+    font-size: 1.3rem;
+}
+
+.si-list {
+    color: var(--blue);
+    list-style: none;
+}
+
+.si-list li{
+    margin: 0 0 .6rem 2rem;
+    font-size: 1.2rem;
+    
+}
+
+
+
+@media screen and (max-width: 767px) {
+    .signin-header {
+        flex-direction: column;
+        height: auto;
+        text-align: center;
+    }
+
+    .si-list li{
+        margin: 0 0 .6rem 0;
+        font-size: 1.2rem;
+        
+    }
+    
+}
