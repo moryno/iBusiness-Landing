@@ -1,7 +1,8 @@
 .company {
     display: flex;
+    flex-direction: row;
     justify-content: center;
-    gap: 1rem;
+    gap: 3rem;
     height: max-content;
     align-items: center;
 }
@@ -16,6 +17,10 @@
     flex-direction: column;
     align-items: center;
 
+}
+
+.c-illustration {
+    width: 45vw;
 }
 
 .c-description {
@@ -46,4 +51,39 @@
 .info-description {
     color: var(--grey);
     font-size: 1.4rem;
+}
+
+
+@media screen and (max-width: 767px) {
+    .company-illustration {
+        display: none;
+    }
+
+    .company-info {
+        width: 90%;
+    }
+
+    .c-illustration {
+        display: none;
+    }
+
+    .c-description {
+        width: 90%;
+    }
+
+    .c-description-text {
+        width: 100%;
+        text-align: start;
+        font-size: 1.1rem;
+    }
+
+    .info-description {
+        font-size: 1.1rem;
+    }
+
+    .c-header {
+        text-align: center;
+        font-size: 1.5rem;
+        width: 70%;
+    }
 }

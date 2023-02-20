@@ -176,7 +176,8 @@ button .nav-button{
 
 #br-link {
     display: block;
-    width: 20vw;
+    width: max-content;
+    text-decoration-line: none;
 }
 
 .nav-styled-button {
@@ -185,6 +186,7 @@ button .nav-button{
     margin-right: 1rem;
     height: 3rem; 
     font-size: .9rem;
+    
     
 }
 

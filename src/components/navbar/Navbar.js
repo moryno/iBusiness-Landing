@@ -53,7 +53,7 @@ export const Navbar = () => {
           </div>
           <div className='brand-links'>  
               <Link to={data.signuptext.to }><button className='nav-button'><FontAwesomeIcon icon={faUser} />&nbsp; {data.signuptext.value}</button></Link>
-              <Link to={data.actionbutton.to }> <button className='nav-styled-button' id='br-link'>{data.actionbutton.value}</button></Link>
+              <Link to={data.actionbutton.to } id='br-link'> <button className='nav-styled-button'>{data.actionbutton.value}</button></Link>
               <FontAwesomeIcon icon={toggleSidebar ? faTimes : faBars } id='burger' onClick={handleToggle}/>
           </div>    
       </div>

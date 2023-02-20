@@ -108,3 +108,16 @@
 .s-description {
     font-size: 1.4rem;
 }
+
+
+
+@media screen and (max-width: 767px) {
+    .support-form {
+        flex-direction: column;
+    }
+
+    .name-control {
+        width: 28vw;
+
+    }
+}
