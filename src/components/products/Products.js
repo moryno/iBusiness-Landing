@@ -10,22 +10,25 @@ export const Products = () => {
 
     const [ carousel, setCarousel ] = useState(0);
 
-
+    
     const handleCarouselRight = () => {
-        if (carousel <= -50 ){
+        let slides = (document.getElementsByClassName('carousel-slide').length) * 25;
+        if (carousel <= -(slides) ){
             setCarousel(0);
         } else{
-            setCarousel(carousel - 50);
+            setCarousel(carousel - (slides));
         }
     }
 
     const handleCarouselLeft = () => {
+        let slides = (document.getElementsByClassName('carousel-slide').length) * 25;
         if ( carousel === 0 ){
-            setCarousel(-50);
+            setCarousel(-(slides));
         } else{
-            setCarousel(carousel + 50);
+            setCarousel(carousel + (slides));
         }
-    }  
+
+    }
 
   const items = data.items;
   const chunkSize = 3;

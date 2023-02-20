@@ -1,10 +1,11 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faMobileButton, faLocationDot, faEnvelope } from '@fortawesome/free-solid-svg-icons';
+import './contactus.css';
 
 export const Address = () => {
   return (
-    <div>
+    <div className='address-body'>
       <div className='adr-head'>
         <FontAwesomeIcon icon={faLocationDot} />
         <h2 className='adr-header'>Location</h2>
@@ -16,9 +17,15 @@ export const Address = () => {
         <FontAwesomeIcon icon={faMobileButton} />
         <h2 className='adr-header'>Phone Number</h2>
       </div>
+      <div className='adr-subtext'>
+        <p>+254 711340201</p>
+      </div>
       <div className='adr-head'>
         <FontAwesomeIcon icon={faEnvelope} />
         <h2 className='adr-header'>Email Address</h2>
+      </div>
+      <div className='adr-subtext'>
+        <p>info@ibusiness.net</p>
       </div>
     </div>
   )

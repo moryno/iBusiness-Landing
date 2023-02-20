@@ -9,7 +9,7 @@ export const Navigation = () => {
         <br></br>
         <div className='navigation-links'>
             {data.navlinks.links.map(link => (
-              <Link to={ link.to} className='navigation-link' key={ link.key }><a className='navigation-link' href='/'>{ link.value }</a></Link>
+              <Link to={ link.to} className='navigation-link' key={ link.key }>{ link.value }</Link>
             ))}
         </div>
     </div>

@@ -1,11 +1,11 @@
 import React from 'react'
-import { Products } from '../components/products/Products'
 import { Footer } from '../components/footer/Footer'
+import { Description } from '../components/pages/ProductView/Description'
 
 export const ProductsView = () => {
   return (
     <>
-      <Products />
+      <Description />
       <Footer />
     </>
   )

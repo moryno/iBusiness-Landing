@@ -8,45 +8,48 @@ import { faAngleLeft, faAngleRight } from '@fortawesome/free-solid-svg-icons';
 
 const TestimonyItem = () => {
 
-  const [ currentItemIndex, setCurrentItemIndex ] = useState(0);
+
   const data = testimonies.items;
-  const [currentItem, setCurrentItem] = useState(testimonies.items[0]);
 
-  useEffect(() => {
+  const [ carousel, setCarousel ] = useState(0);
 
-    setCurrentItem(data[currentItemIndex]);
     
-  }, [currentItemIndex, data]);
-  
-  const handleNext = () => {
-    if (currentItemIndex < data.length - 1) {
-      setCurrentItemIndex(currentItemIndex + 1);
-    } else if (currentItemIndex === data.length - 1) {
-      setCurrentItemIndex(0);
-    }
-  };
+  const handleCarouselRight = () => {
+      let slides = (document.getElementsByClassName('t-item').length-1) * 100;
+      if (carousel === -(slides) ){
+          setCarousel(0);
+      } else{
+          setCarousel(carousel - 100);
+      }
+  }
 
-  const handlePrevious = () => {
-    if (currentItemIndex > 0) {
-      setCurrentItemIndex(currentItemIndex - 1);
-    } else {
-      setCurrentItemIndex(data.length - 1);
-    }
-  };
+  const handleCarouselLeft = () => {
+      let slides = (document.getElementsByClassName('t-item').length-1) * 100;
+      if ( carousel === 0 ){
+          setCarousel(-(slides));
+      } else{
+          setCarousel(carousel + 100);
+      }
 
-
+  }
 
   return (
-        <div className='testimony-item'>
-          <FontAwesomeIcon icon={faAngleLeft} onClick={handlePrevious} className='testimony-btn'/>
-            <LazyLoadImage src={ currentItem.imgurl } className='t-profile' alt='profile' />
-            <div className='t-info'>
-              <p className='t-item-description'>"{ currentItem.description }"</p>
-              <p className='t-item-name'><b>{ currentItem.author }</b></p>
-              <p className='t-item-role'>{ currentItem.occupation }</p>
-            </div>
-            <FontAwesomeIcon icon={faAngleRight}  onClick={handleNext} className='testimony-btn'/>
+    <div className='testimony-items'>
+    <FontAwesomeIcon icon={faAngleLeft} onClick={handleCarouselLeft} className='testimony-prev'/>
+        <div className='testimony-item' style={{ transform: `translateX(${carousel}%)` }}>
+            {data.map(item => (
+              <div className='t-item'>
+                <LazyLoadImage src={ item.imgurl } className='t-profile' alt='profile' />
+                <div className='t-info'>
+                  <p className='t-item-description'>"{ item.description }"</p>
+                  <p className='t-item-name'><b>{ item.author }</b></p>
+                  <p className='t-item-role'>{ item.occupation }</p>
+                </div>
+              </div>
+            ))}
         </div>
+    <FontAwesomeIcon icon={faAngleRight} onClick={handleCarouselRight} className='testimony-next'/>
+    </div>
   );
 };
 

@@ -34,7 +34,7 @@ export const Navbar = () => {
       <div className='nav-mobile' id='nav-mobile'>
         <div className='nav-mobile-content'>
           {data.navmobilecontent.links.map(link => (
-            <Link key={link.key}  className="nav-mobile-route" to={ link.to }><button className='nav-mobile-link'>{ link.value }<span className='nav-mobile-icon'><FontAwesomeIcon icon={faAngleRight} /></span></button></Link>
+            <Link key={link.key} className="nav-mobile-route" onClick={handleToggle} to={ link.to }><button className='nav-mobile-link'>{ link.value }<span className='nav-mobile-icon'><FontAwesomeIcon icon={faAngleRight} /></span></button></Link>
           ))}
         </div>
       </div>
@@ -52,7 +52,7 @@ export const Navbar = () => {
               ))}
           </div>
           <div className='brand-links'>  
-              <Link to={data.signuptext.to } ><button className='nav-button'><FontAwesomeIcon icon={faUser} />&nbsp; {data.signuptext.value}</button></Link>
+              <Link to={data.signuptext.to }><button className='nav-button'><FontAwesomeIcon icon={faUser} />&nbsp; {data.signuptext.value}</button></Link>
               <Link to={data.actionbutton.to }> <button className='nav-styled-button' id='br-link'>{data.actionbutton.value}</button></Link>
               <FontAwesomeIcon icon={toggleSidebar ? faTimes : faBars } id='burger' onClick={handleToggle}/>
           </div>    

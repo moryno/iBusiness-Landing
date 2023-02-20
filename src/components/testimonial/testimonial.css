@@ -11,13 +11,28 @@
 }
 
 
-.testimony-btn {
+.testimony-prev, .testimony-next {
     background-color: var(--cream);
     border-style: none;
+    position: absolute;
     font-size: 1.2rem;
     color: var(--blue);
     transition: all 0.3s;
 }
+
+.testimony-prev:hover, .testimony-next:hover {
+    transform: scale(1.8);
+}
+
+.testimony-prev {
+    left: 20vw;
+}
+
+.testimony-next {
+    right: 20vw;
+}
+
+
 
 .testimony-btn:hover {
     transform: scale(1.7);
@@ -67,7 +82,23 @@
 }
 
 .testimony-item {
+    display: flex;
     width: 50vw;
+    height: max-content;
+    flex-wrap: nowrap;
+    overflow: visible;
+    transition: all 0.5S;
+}
+
+.testimony-items {
+    overflow: hidden;
+    display: flex;
+}
+
+.testimony-items-container {
+    width: 90vw;
+    display: flex;
+    flex-wrap: nowrap;
     background-color: var(--cream);
     height: auto;
     padding: .5rem;
@@ -104,14 +135,22 @@
 }
 
 
-
+.t-item {
+    width: 50vw;
+    flex-shrink: 0;
+    height: max-content;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+     
+}
 
 .t-profile {
     width: 7rem;
     height: 7rem;
     border-radius: 100%;
     padding: 1rem;
-
+    margin-left: .5rem;
 }
 
 @media screen and (max-width:1200px) {
@@ -124,15 +163,51 @@
 
     }
 
+    .t-item-description {
+        color: var(--blue);
+        font-size: .6rem;
+        font-weight: 700;
+    }
+    
+    .t-item-name {
+        font-size: .8rem;
+        font-weight: 700;
+    }
+    
+    .t-item-role {
+        font-size: .8rem;
+        font-weight: 700;
+    }
+    
 
     .test-main {
         width: auto;
     }
 
-    .testimony-item, .testimony-items {
-        width: auto;
-        padding-right: 1rem;
-        padding-left: 1rem;
+    .testimony-item {
+        width: 70vw;
+        height: 100%;
     }
 
+    .t-item {
+        width: 100%;
+    }
+
+    .t-profile {
+        margin-left: 0rem;
+        width: 3rem;
+        height: 3rem;
+        border-radius: 100%;
+        padding: .5rem;
+    }
+
+    .testimony-prev {
+        left: 5vw;
+    }
+    
+    .testimony-next {
+        right: 5vw;
+    }
+    
+    
 }

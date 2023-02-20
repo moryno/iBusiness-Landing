@@ -11,9 +11,7 @@ export const Testimonial = () => {
           <h1 className='hero-lgheader test-text'>{ data.testimony.subtitle }</h1>
           <p className='about-p'>{ data.testimony.description }</p>
         </div>
-        <div className='testimony-items'>
-            <TestimonyItem />
-        </div>
+        <TestimonyItem />
     </div>
   )
 }
