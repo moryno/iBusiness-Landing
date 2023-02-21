@@ -1,5 +1,5 @@
 import React from 'react'
-import { SupportForm } from '../components/support/SupportForm'
+import { SupportForm } from '../components/pages/support/SupportForm'
 import { Footer } from '../components/footer/Footer'
 
 export const Support = () => {
