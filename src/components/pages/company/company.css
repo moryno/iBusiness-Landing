@@ -59,6 +59,10 @@
         display: none;
     }
 
+    .company {
+        margin-top: -1rem;
+    }
+
     .company-info {
         width: 90%;
         display: flex;
@@ -74,9 +78,7 @@
         width: 90%;
     }
 
-    #info-btn {
-       
-    }  
+
 
     .c-description-text {
         width: 100%;
@@ -96,5 +98,6 @@
 
     .info-header {
         text-align: center;
+        font-size: 2rem;
     }
 }

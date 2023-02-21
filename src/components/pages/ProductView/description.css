@@ -47,3 +47,28 @@
     font-size: 1.5rem;
     text-align: start;
 }
+
+@media screen and (max-width: 767px) {
+    .description {
+        margin-top: 0;
+    }
+
+    .desc-header {
+        margin: 0;
+    }
+
+    .features {
+        flex-direction: column;
+        
+    }
+
+    .feature-left, .feature-right {
+        width: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 1rem;
+    }
+
+}
