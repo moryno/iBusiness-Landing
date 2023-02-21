@@ -13,7 +13,7 @@ export const Header = () => {
         <div className='company-info'>
             <h4 className='info-header'>{ data.header_section.header }</h4>
             <p className='info-description'>{ data.header_section.description }</p>
-            <Landingbutton value="Read more" id='info-btn'/>
+            <Landingbutton value="Read more" id='info-btn' href="#c-info"/>
         </div>
     </div>
   )
