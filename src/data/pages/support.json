@@ -1,4 +1,5 @@
 {
     "header" : "Support",
-    "subheader" : "Fill out your contact info. We’ll get in touch ASAP."
+    "subheader" : "Fill out your contact info. We’ll get in touch ASAP.",
+    "btn_name"  : "Submit"
 }

@@ -10,5 +10,6 @@
         "Manage order to cash processes",
         "Generate reports and analytics"
     ],
-    "s_subheader" : "Enter your information here"
+    "s_subheader" : "Enter your information here",
+    "btn_text" : "Submit"
 }

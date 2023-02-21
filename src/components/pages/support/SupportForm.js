@@ -22,7 +22,7 @@ export const SupportForm = () => {
                 <input type='text' placeholder='Number of employees ' className='s-form-control' />
                 <input type='text' placeholder='Country' className='s-form-control' />
                 <textarea type='text' placeholder='Type your message here' className='s-textbox' />
-                <button value="Submit" className='s-button'>Submit</button>
+                <button value="Submit" className='s-button'>{ data.btn_name }</button>
             </div>
         </div>
         <div className='s-form s-right'>

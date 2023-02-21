@@ -26,7 +26,7 @@ export const Header = () => {
                     <input type='text' placeholder='Organization Name' className='sf-form-control' />
                     <input type='text' placeholder='Number of employees ' className='sf-form-control' />
                     <input type='text' placeholder='Country' className='sf-form-control' />
-                    <button value="Submit" className='sf-button'>Submit</button>
+                    <button value="Submit" className='sf-button'>{ data.btn_text }</button>
             </div>
         </div>
     </div>
