@@ -1,7 +1,6 @@
 import React from 'react'
 import './company.css'
 import illustration from '../../../assets/ill3.png'
-import { Landingbutton } from '../../UI/Button'
 import data from '../../../data/pages/company' 
 
 export const Header = () => {
