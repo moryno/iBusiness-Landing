@@ -1,7 +1,7 @@
 .gs-container {
     width: 60vw;
-    height: 70vh;
-    padding: 2rem;
+    height: 69.4vh;
+    padding: 1.5rem;
     display: flex;
     justify-content: space-between;
     align-self: center;
@@ -15,11 +15,15 @@
     flex: 1;
 }
 
+.gs-form {
+    margin-top: -1rem;
+}
+
 .gs-header {
     color: var(--blue);
     font-size: 2rem;
     font-weight: bold;
-    margin-top: 1rem;
+    margin-top: .5rem;
 }
 
 .gs-description {

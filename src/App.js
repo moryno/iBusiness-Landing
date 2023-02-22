@@ -11,6 +11,7 @@ import { UsageTerms } from './pages/UsageTerms';
 import { ProductGuide } from './pages/ProductGuide';
 import { SignUp } from './pages/GetStarted';
 import { SignIn } from './pages/SignIn';
+import { NotFound } from './pages/NotFound';
 import { Navbar } from './components/navbar/Navbar';
 import { Copyright } from './components/copyright/Copyright';
 import { Routes, Route, BrowserRouter } from 'react-router-dom';
@@ -33,6 +34,7 @@ function App() {
           <Route path="/product-guide" element={<ProductGuide />} />
           <Route path="/get-started" element={<SignUp />} />
           <Route path="/sign-in" element={<SignIn />} />
+          <Route path="*" element={<NotFound />} />
         </Routes>
         <Copyright />
       </BrowserRouter>
