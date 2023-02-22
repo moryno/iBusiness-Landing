@@ -30,3 +30,9 @@
     color: var(--maroon);
 
 }
+
+@media screen and (max-width: 767px) {
+    .copyright {
+        display: none;
+    }
+}
