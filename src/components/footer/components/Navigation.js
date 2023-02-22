@@ -26,8 +26,7 @@ export const Navigation = () => {
         </div>
         <div className='nav-copy'>
           <Link to="/" className="brand-logo"><Brand className="brand-logo" /></Link>
-          <p className='nav-copy-h'>&copy; 2023 BusinessCloud Ltd. All Rights Reserved.</p>
-          <p className='nav-copy-desc'>iBusiness is a registered trademark of BusinessCloud Ltd. Terms and conditions, features, support, pricing, and service options subject to change without notice.</p>
+          <p className='nav-copy-h'>&copy; 2023 BusinessCloud Limited. All Rights Reserved.</p>
         </div>
     </div>
   )

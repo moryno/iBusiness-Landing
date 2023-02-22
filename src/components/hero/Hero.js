@@ -4,6 +4,7 @@ import illustration from '../../assets/illustration.png';
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import data from '../../data/hero'; 
 import { Landingbutton } from '../UI/Button';
+import { Link } from 'react-router-dom';
 
 export const Hero = () => {
   return (
@@ -13,7 +14,7 @@ export const Hero = () => {
                 <p className='lander-page-subtitle'>{ data.subtitle }</p>
                 <form>
                     <input type="email" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" required />
-                    <Landingbutton value="Sign up" />
+                    <Link to="/get-started"><Landingbutton value="Sign up" /></Link>
                 </form>
             </div>
             <div className='hero-image-div'>

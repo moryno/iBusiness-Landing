@@ -5,10 +5,10 @@ import { faFacebook, faInstagram, faTwitter, faLinkedin  } from '@fortawesome/fr
 export const Socials = () => {
   return (
       <div className='socials-icons'>
-          <FontAwesomeIcon icon={faFacebook} />
-          <FontAwesomeIcon icon={faTwitter} />
-          <FontAwesomeIcon icon={faInstagram} />
-          <FontAwesomeIcon icon={faLinkedin} />
+          <FontAwesomeIcon icon={faFacebook} className='social-icon' />
+          <FontAwesomeIcon icon={faTwitter} className='social-icon' />
+          <FontAwesomeIcon icon={faInstagram} className='social-icon' />
+          <FontAwesomeIcon icon={faLinkedin} className='social-icon' />
       </div>
   )
 }

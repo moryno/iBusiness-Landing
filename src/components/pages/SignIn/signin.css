@@ -1,6 +1,6 @@
 .signin-container {
     width: 60vw;
-    height: 60vh;
+    height: 65vh;
     padding: 2rem;
     display: flex;
     justify-content: space-between;
@@ -35,7 +35,7 @@
 }
 
 .signin-header {
-    color: var(--blue);
+    color: var(--maroon);
     font-size: 2rem;
     font-weight: bold;
     margin: 0;
@@ -43,7 +43,7 @@
 
 .signin-description {
     font-size: 1rem;
-    color: var(--maroon);
+    color: var(--blue);
     
 }
 

@@ -47,6 +47,17 @@
     flex-direction: row;
     gap: 1.5rem;
     font-size: 1.5rem;
+    color: var(--grey);
+    
+}
+
+.social-icon {
+    transition: all 0.5s;
+    font-size: 1.8rem;
+}
+
+.social-icon:hover {
+    color: var(--maroon);
 }
 
 
@@ -61,7 +72,7 @@
 }
 
 .nav-copy-h {
-    color: var(--blue);
+    color: var(--grey);
     
 }
 
