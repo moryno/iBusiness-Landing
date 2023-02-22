@@ -33,6 +33,7 @@
 
 @media screen and (max-width: 767px) {
     .copyright {
-        display: none;
+        position: absolute;
+        bottom: 0%;
     }
 }
