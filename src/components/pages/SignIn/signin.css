@@ -145,6 +145,7 @@
         flex-direction: column;
         height: auto;
         text-align: center;
+        width: 80%;
     }
 
     .signin-form-control {
