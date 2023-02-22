@@ -37,6 +37,18 @@
 
 @media screen and (max-width: 767px) {
     .copyright {
+        gap: 1rem;
+        
+    }
+
+    .copyright-left {
+        flex-direction: row;
+        width: 100%;
+        gap: .5rem;
+        justify-content: center;
+    }
+
+    .copyright-right {
         display: none;
     }
 }
