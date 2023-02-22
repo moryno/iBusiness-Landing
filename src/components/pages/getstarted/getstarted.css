@@ -8,7 +8,6 @@
     background-color: rgba(237, 237, 237, 0.364);
     box-shadow: 1px 1px 10px var(--blue);
     border-radius: 20px;
-    align-self: center;
 
 }
 
@@ -73,6 +72,7 @@
 .gs-list {
     color: var(--blue);
     list-style: none;
+    text-align: start;
 }
 
 .gs-list li{
@@ -103,5 +103,12 @@
         height: auto;
         text-align: center;
     }
+
+    .gs-list li{
+        margin: 0 0 .6rem 0;
+        font-size: 1rem;
+        
+    }
+      
 }
 
