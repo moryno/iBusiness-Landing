@@ -1,6 +1,7 @@
 import React from 'react'
 import './signin.css'
 import data from '../../../data/pages/signin'
+import { Link } from 'react-router-dom'
 
 export const Card = () => {
   return (
@@ -10,7 +11,7 @@ export const Card = () => {
             <p className='signin-description'>{ data.subheader }</p>
             <div className='info-footer'>
               <p className='signin-text'>New here?</p>
-              <button href='/' className='signin-gs-btn'>Get Started</button>
+              <Link to='/get-started'><button className='signin-gs-btn'>Get Started</button></Link>
             </div>
         </div>
         <div className='signin-form'>

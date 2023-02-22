@@ -25,6 +25,7 @@
     background-color: var(--cream);
     cursor: pointer;
     transition: all 0.5s;
+    border-radius: 5px;
 }
 
 .signin-gs-btn:hover {
@@ -131,6 +132,7 @@
 .signin-btn-logo {
     width: 30px;
     height: 30px;
+
 }
 
 .signin-text-center {
@@ -143,6 +145,26 @@
         flex-direction: column;
         height: auto;
         text-align: center;
+    }
+
+    .signin-form-control {
+        height: 5vh;
+        border-radius: .5rem;
+        padding-left: 1rem;
+        outline: none;
+        border-width: 1px;
+        border-color: var(--blue);
+        box-shadow: 1.5px 1.5px 1.5px var(--blue);
+        width: auto;
+        
+    }
+
+    .signin-form {
+        width: 100%;
+    }
+
+    .login-microsoft {
+        width: 70%;
     }
 }
 
