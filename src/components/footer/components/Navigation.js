@@ -1,6 +1,7 @@
 import React, { useRef, useEffect } from 'react';
 import data from '../../../data/footer';
 import { Link } from 'react-router-dom';
+import Brand from '../../UI/Brand';
 
 export const Navigation = () => {
 
@@ -22,6 +23,11 @@ export const Navigation = () => {
             {data.navlinks.links.map(link => (
               <Link to={ link.to} className='navigation-link' ref={scrollRef} key={ link.key }>{ link.value }</Link>
             ))}
+        </div>
+        <div className='nav-copy'>
+          <Link to="/" className="brand-logo"><Brand className="brand-logo" /></Link>
+          <p className='nav-copy-h'>&copy; 2023 BusinessCloud Ltd. All Rights Reserved.</p>
+          <p className='nav-copy-desc'>iBusiness is a registered trademark of BusinessCloud Ltd. Terms and conditions, features, support, pricing, and service options subject to change without notice.</p>
         </div>
     </div>
   )

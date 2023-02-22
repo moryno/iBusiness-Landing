@@ -9,8 +9,10 @@ import { OurStory } from './pages/OurStory';
 import { Privacy } from './pages/Privacy';
 import { UsageTerms } from './pages/UsageTerms';
 import { ProductGuide } from './pages/ProductGuide';
+import { SignUp } from './pages/GetStarted';
 import { SignIn } from './pages/SignIn';
 import { Navbar } from './components/navbar/Navbar';
+import { Copyright } from './components/copyright/Copyright';
 import { Routes, Route, BrowserRouter } from 'react-router-dom';
 
 function App() {
@@ -29,9 +31,10 @@ function App() {
           <Route path="/privacy" element={<Privacy />} />
           <Route path="/usage-terms" element={<UsageTerms />} />
           <Route path="/product-guide" element={<ProductGuide />} />
-          <Route path="/get-started" element={<SignIn />} />
+          <Route path="/get-started" element={<SignUp />} />
           <Route path="/sign-in" element={<SignIn />} />
         </Routes>
+        <Copyright />
       </BrowserRouter>
     </div>
   );

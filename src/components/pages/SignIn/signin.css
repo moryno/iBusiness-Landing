@@ -1,79 +1,65 @@
-.signin-header {
-    width: 70vw;
-    height: 70vh;
+.signin-container {
+    width: 60vw;
+    height: 60vh;
     padding: 2rem;
     display: flex;
     justify-content: space-between;
+    align-self: center;
     background-color: rgba(237, 237, 237, 0.364);
     box-shadow: 1px 1px 10px var(--blue);
     border-radius: 20px;
+    align-self: center;
 
 }
 
-.si-subheader {
-    color: var(--blue);
-    text-align: center;
-    font-size: 1.3rem;
-}
-
-.signup-page {
-    display: flex;
-    justify-content: center;
-}
-
-.signup-info, .signup-form {
+.signin-info, .signin-form {
     flex: 1;
 }
 
-.si-header {
+.signin-gs-btn {
+    width: 40%;
+    height: 2rem;
+    border-color: var(--grey);
+    border-width: 1px;
+    color: var(--grey);
+    background-color: var(--cream);
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.signin-gs-btn:hover {
+    border-color: var(--blue);
     color: var(--blue);
-    font-size: 2.5rem;
+    background-color: var(--cream);
+}
+
+.signin-header {
+    color: var(--blue);
+    font-size: 2rem;
     font-weight: bold;
-    margin-top: 1rem;
+    margin: 0;
 }
 
-.si-description {
-    font-size: 1.3rem;
-}
-
-.si-list {
-    color: var(--blue);
-    list-style: none;
-}
-
-.si-list li{
-    margin: 0 0 .6rem 0;
-    font-size: 1.2rem;
+.signin-description {
+    font-size: 1rem;
+    color: var(--maroon);
     
 }
 
-
-.s-header {
-    text-align: center;
-    font-size: 1.3rem;
-}
-
-.s-subheader {
+.signin-subheader {
     color: var(--blue);
     text-align: center;
-    font-size: 1rem;
+    font-size: 1.5rem;
 }
 
-.s-input-names {
-    display: flex;
-    justify-content: space-between;
-
-}
-
-
-.s-inputs {
+.signin-inputs {
     display: flex;
     flex-direction: column;
     gap: 1rem;
 
 }
 
-.sf-button {
+.signin-button {
     background-color: var(--blue);
     color: var(--cream);
     border-style: none;
@@ -89,13 +75,18 @@
     flex-grow: 1;
 }
 
-.sf-button:hover {
+.signin-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.signin-button:hover {
     background-color: #3683d058;
     color: var(--blue);
 }
   
-
-.sf-form-control {
+.signin-form-control {
     height: 5vh;
     border-radius: .5rem;
     padding-left: 1rem;
@@ -103,43 +94,55 @@
     border-width: 1px;
     border-color: var(--blue);
     box-shadow: 1.5px 1.5px 1.5px var(--blue);
-    width: 28vw;
+    
 }
 
-
-.s-description {
-    font-size: 1.4rem;
+.signin-form {
+    align-self: center;
 }
 
+.signin-text{
+    color: var(--grey);
+}
 
+.login-microsoft {
+    width: 45%;
+    height: 3rem;
+    align-self: center;
+    background-color: var(--cream);
+    border-color: rgba(128, 128, 128, 0.459);
+    border-width: 1px;
+    color: var(--grey);
+    font-size: .9rem;
+    display: flex;
+    align-items: center;    
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.5s;
+
+}
+
+.login-microsoft:hover {
+    border-color: var(--blue);
+    color: var(--blue);
+    border-width: 1px;
+}
+
+.signin-btn-logo {
+    width: 30px;
+    height: 30px;
+}
+
+.signin-text-center {
+    color: var(--grey);
+    text-align: center;
+}
 
 @media screen and (max-width: 767px) {
-    .signin-header {
+    .signin-container {
         flex-direction: column;
         height: auto;
         text-align: center;
-    }
-
-    .si-list li{
-        margin: 0 0 .6rem 0;
-        font-size: 1.2rem;
-        
-    }
-
-    
-    .sf-form-control {
-        width: auto;
-        padding-left: 1rem;
-    }
-
-    
-    .support-form {
-        flex-direction: column;
-    }
-
-    .name-control {
-        width: 28vw;
-
     }
 }
 

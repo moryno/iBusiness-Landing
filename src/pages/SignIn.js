@@ -1,14 +1,10 @@
 import React from 'react'
-import { Header } from '../components/pages/SignIn/Header'
-import { Footer } from '../components/footer/Footer'
+import { Card } from '../components/pages/SignIn/SignInCard'
 
 export const SignIn = () => {
   return (
     <>
-    <div className='signup-page'>
-      <Header />
-    </div>
-    <Footer />  
+        <Card />
     </>
   )
 }
