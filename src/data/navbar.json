@@ -15,5 +15,6 @@
                     { "key" : "3", "to" : "/support", "value" : "Support"} 
                  ],
     "actionbutton" : { "to" : "/get-started", "value" : "Get started" },
-    "signuptext" : { "to": "/sign-in", "value" : "Sign in" }
+    "signuptext" : { "to": "/sign-in", "value" : "Sign in" },
+    "brand" : "iBusiness"
 }

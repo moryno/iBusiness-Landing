@@ -22,7 +22,8 @@
                      { "key" : "9", "to" : "/company", "value" : "About Us" }
 
                     ],
-         "title" : "Links"
+         "title" : "Links",
+         "copy" : "2023 BusinessCloud Limited. All Rights Reserved."
     }
 
 }

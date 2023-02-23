@@ -19,14 +19,10 @@ export const GetStarted = () => {
         <div className='gs-form'>
             <p className='gs-subheader'>{ data.s_subheader }</p>
             <div className='gs-inputs'>
-                    <input type='text' placeholder='First name' className='gs-form-control' />
-                    <input type='text' placeholder='Last name' className='gs-form-control' />
-                    <input type='text' placeholder='Email Address' className='gs-form-control' />
-                    <input type='text' placeholder='Telephone/Mobile No.' className='gs-form-control' />
-                    <input type='text' placeholder='Organization Name' className='gs-form-control' />
-                    <input type='text' placeholder='Number of employees ' className='gs-form-control' />
-                    <input type='text' placeholder='Country' className='gs-form-control' />
-                    <button value="Submit" className='gs-button'>{ data.btn_text }</button>
+                {data.fields.map(input => (
+                <input type={ input.type } placeholder={ input.value } className='gs-form-control' />
+                ))}
+                <button value="Submit" className='gs-button'>{ data.btn_text }</button>
             </div>
         </div>
     </div>

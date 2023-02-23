@@ -13,14 +13,13 @@ export const SupportForm = () => {
 
             <div className='s-inputs'>
                 <div className='s-input-names'>
-                    <input type='text' placeholder='First name' className='name-control' />
-                    <input type='text' placeholder='Middle name' className='name-control' />
+                    { data.inputs.names.map(input => (
+                        <input type={ input.type } placeholder={ input.value } className='name-control' />
+                    ))}
                 </div>
-                <input type='text' placeholder='Email Address' className='s-form-control' />
-                <input type='text' placeholder='Telephone/Mobile No.' className='s-form-control' />
-                <input type='text' placeholder='Organization Name' className='s-form-control' />
-                <input type='text' placeholder='Number of employees ' className='s-form-control' />
-                <input type='text' placeholder='Country' className='s-form-control' />
+                { data.inputs.fields.map(input => (
+                    <input type={ input.type } placeholder={ input.value } className='s-form-control' />
+                ))}
                 <textarea type='text' placeholder='Type your message here' className='s-textbox' />
                 <button value="Submit" className='s-button'>{ data.btn_name }</button>
             </div>

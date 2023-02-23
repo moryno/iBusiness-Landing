@@ -1,5 +1,6 @@
 import React from 'react'
-import data from '../../data/footer'
+import data from '../../data/copyright'
+import copy from '../../data/footer'
 import './copyright.css'
 
 
@@ -7,13 +8,12 @@ export const Copyright = () => {
   return (
     <div className='copyright'>
       <div className='copyright-left'>
-        <a href='https://ibusiness.azurewebsites.net/PrivacyPolicy/index.htm' className='copyright-link'>Privacy Policy</a>
-        <a href='/' className='copyright-link'>Terms of Use</a>
-        <a href='mailto:info@pmsgenius.com?subject=iBusiness%20Enquiry' className='copyright-link'>Email Us</a>
-        <a href='tel:+254711340201' className='copyright-link'>Call Us</a>
+        {data.map(link => (
+          <a href={ link.to } key={ link.value } className='copyright-link'>{ link.value }</a>
+        ))}
       </div>
       <div className='copyright-right'>
-        &copy; { data.copyright.subtitle }
+        &copy; { copy.copyright.subtitle }
       </div>
     </div>
   )

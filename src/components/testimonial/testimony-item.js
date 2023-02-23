@@ -38,7 +38,7 @@ const TestimonyItem = () => {
     <FontAwesomeIcon icon={faAngleLeft} onClick={handleCarouselLeft} className='testimony-prev'/>
         <div className='testimony-item' style={{ transform: `translateX(${carousel}%)` }}>
             {data.map(item => (
-              <div className='t-item'>
+              <div className='t-item' key={ item.description }>
                 <LazyLoadImage src={ item.imgurl } className='t-profile' alt='profile' />
                 <div className='t-info'>
                   <p className='t-item-description'>"{ item.description }"</p>

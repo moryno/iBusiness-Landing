@@ -1,8 +1,9 @@
 import React from 'react'
+import data from '../../data/navbar'
 
 const Brand = () => {
   return (
-    <div className="brandname">iBusiness</div>
+    <div className="brandname">{ data.brand }</div>
   )
 }
 

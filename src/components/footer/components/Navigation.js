@@ -26,7 +26,7 @@ export const Navigation = () => {
         </div>
         <div className='nav-copy'>
           <Link to="/" className="brand-logo"><Brand className="brand-logo" /></Link>
-          <p className='nav-copy-h'>&copy; 2023 BusinessCloud Limited. All Rights Reserved.</p>
+          <p className='nav-copy-h'>&copy; { data.navlinks.copy }</p>
         </div>
     </div>
   )

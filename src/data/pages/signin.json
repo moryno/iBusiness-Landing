@@ -11,5 +11,17 @@
         "Generate reports and analytics"
     ],
     "s_subheader" : "Account Login",
-    "btn_text" : "Submit"
+    "btn_text" : "Submit",
+    "newcust_text" : "New to iBusiness?",
+    "newcust_btn" : "Get Started",
+    "fields" : [
+        {
+            "value"  : "Email Address or Username",
+            "type"  : "text"
+        },
+        {
+            "value"  : "Password",
+            "type"  : "password"
+        }
+    ]
 }
