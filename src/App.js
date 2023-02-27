@@ -4,11 +4,6 @@ import { Home } from './pages/Home';
 import { ProductsView } from './pages/ProductsView';
 import { Company } from './pages/Company';
 import { Support } from './pages/Support';
-import { FAQ } from './pages/FAQ';
-import { OurStory } from './pages/OurStory';
-import { Privacy } from './pages/Privacy';
-import { UsageTerms } from './pages/UsageTerms';
-import { ProductGuide } from './pages/ProductGuide';
 import { SignUp } from './pages/GetStarted';
 import { SignIn } from './pages/SignIn';
 import { NotFound } from './pages/NotFound';
@@ -27,11 +22,6 @@ function App() {
           <Route path="/products" element={<ProductsView />} />
           <Route path="/company" element={<Company />} />
           <Route path="/support" element={<Support />} />
-          <Route path="/FAQ" element={<FAQ />} />
-          <Route path="/our-story" element={<OurStory />} />
-          <Route path="/privacy" element={<Privacy />} />
-          <Route path="/usage-terms" element={<UsageTerms />} />
-          <Route path="/product-guide" element={<ProductGuide />} />
           <Route path="/get-started" element={<SignUp />} />
           <Route path="/sign-in" element={<SignIn />} />
           <Route path="*" element={<NotFound />} />

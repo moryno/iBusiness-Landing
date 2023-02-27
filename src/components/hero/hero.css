@@ -30,7 +30,7 @@
     display: flex;
     flex-direction: column;
     flex: 1;
-    gap: 1rem;
+    gap: 2rem;
 }
 
 .hero-image-div {
@@ -38,14 +38,15 @@
 }
 
 .hero-image {
-  width: 50vw;
-  height: 50vh;
-  margin-bottom: 5rem;
+  width: 40vw;
+  height: 55vh;
+  margin-bottom: 2rem;
+  margin-left: 2rem;
   transform: rotate();
   border-radius: .1rem;
 }
 
-.form-control {
+.hero-form-control {
     display: block;
     width: 25vw;
     height: calc(1.5em + 2px);
@@ -54,7 +55,6 @@
     font-weight: 400;
     line-height: 1.5;
     color: var(--grey);
-    margin-bottom: 1rem;
     background-color: var(--cream);
     background-clip: padding-box;
     border: 1.5px solid var(--blue);
@@ -63,7 +63,7 @@
     transition: border-color 0.15s ease-in-out, box-shadow 0.3s ease-in-out;
   }
 
-  .form-control:focus {
+  .hero-form-control:focus {
     border-color: var(--blue);
     outline: none;
     box-shadow: 2px 2px 2px var(--blue);
@@ -83,12 +83,17 @@
     margin-top: -.5rem;
   }
 
+  .hero-landing-btn {
+    height: auto;
+    width: 10rem;
+  }
+
   form {
     display: flex;
     flex-direction: row;
     gap: 1rem;
-    align-content: center;
-
+    align-items: center;
+    
   }
 
 
@@ -108,11 +113,11 @@
     display: flex;
     flex-direction: column;
     gap: 1rem;
-    align-content: center;
+    align-items: flex-start;
   }
 
 
-  .form-control {
+  .hero-form-control {
     flex-grow: 1;
     width: 100%;
   }
@@ -128,5 +133,8 @@
     gap: 3rem;
   }
 
+  #hero-landing-btn {
+    width: vw;
+  }
 
 }

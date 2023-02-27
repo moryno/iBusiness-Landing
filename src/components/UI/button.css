@@ -21,11 +21,9 @@
 
   
 @media screen and (max-width:767px) {
-
-  
     .styled-button {
       flex-grow: 1;
-      width: 50%;
+      width: 100%;
     }
 
   }
