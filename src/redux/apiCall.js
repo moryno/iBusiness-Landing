@@ -6,9 +6,13 @@ import axios from "axios";
 export const login = async (dispatch, user) => {
   dispatch(loginStart());
   try {
-    const { data } = await axios.post("http://192.168.1.200:7030/login", user, {
-      withCredentials: true,
-    });
+    const { data } = await axios.post(
+      "https://bookingapptrial.azurewebsites.net/login",
+      user,
+      {
+        withCredentials: true,
+      }
+    );
     console.log(data);
     // setupLogin(data?.token);
     // dispatch(loginSuccess(data));
