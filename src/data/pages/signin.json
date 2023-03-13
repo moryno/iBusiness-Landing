@@ -16,12 +16,14 @@
     "newcust_btn" : "Get Started",
     "fields" : [
         {
-            "value"  : "Email Address or Username",
-            "type"  : "text"
+            "type":"text",
+            "name":"userName",
+            "placeholder":"Username"
         },
         {
-            "value"  : "Password",
-            "type"  : "password"
+            "type":"password",
+            "name":"password",
+            "placeholder":"Password"
         }
     ]
 }

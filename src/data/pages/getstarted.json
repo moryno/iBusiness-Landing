@@ -14,32 +14,44 @@
     "btn_text" : "Submit",
     "fields" : [
         {
-            "value"  : "First name",
-            "type"  : "text"
+            "type":"text",
+            "name":"fullName",
+            "placeholder":"Full Name"
         },
         {
-            "value"  : "Last name",
-            "type"  : "text"
+            "type":"text",
+            "name":"userName",
+            "placeholder":"Username"
         },
         {
-            "value"  : "Email Address",
-            "type"  : "email"
+            "type":"email",
+            "name":"email",
+            "placeholder":"Email"
         },
         {
-            "value"  : "Telephone/Mobile No.",
-            "type"  : "number"
+            "type":"text",
+            "name":"telephone",
+            "placeholder":"Telephone"
         },
         {
-            "value"  : "Organization Name",
-            "type"  : "text"
+            "type":"text",
+            "name":"physicalAddress",
+            "placeholder":"Physical Address"
         },
         {
-            "value"  : "Number of employees",
-            "type"  : "number"
+            "type":"text",
+            "name":"originCountry",
+            "placeholder":"Origin Country"
         },
         {
-            "value"  : "Country",
-            "type"  : "text"
+            "type":"password",
+            "name":"password",
+            "placeholder":"Password"
+        },
+        {
+            "type":"password",
+            "name":"confirmPassword",
+            "placeholder":"Confirm Password"
         }
     ] 
 }
