@@ -42,7 +42,7 @@ export const Card = () => {
       const { data } = await request.get(msSingleSign + search);
       setupLogin(data?.token);
       dispatch(loginSuccess(data));
-      window.location.href = homeWebsite;
+      window.location.href = homeWebsite + "#token=" + data?.token;
     };
     if (search) getUserInformation();
   }, [search, dispatch]);
