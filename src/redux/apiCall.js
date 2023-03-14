@@ -15,7 +15,7 @@ export const login = async (dispatch, user) => {
       }
     );
 
-    setupLogin(data?.token, data?.user);
+    setupLogin(data?.token);
     dispatch(loginSuccess(data));
     window.location.href = homeWebsite + "#token=" + data?.token;
   } catch (error) {

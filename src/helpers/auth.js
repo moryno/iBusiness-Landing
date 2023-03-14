@@ -2,7 +2,6 @@ export const logoutFunc = () => {
   localStorage.removeItem("token");
 };
 
-export const setupLogin = (token, user) => {
+export const setupLogin = (token) => {
   localStorage.setItem("token", token);
-  localStorage.setItem("user", JSON.stringify(user));
 };
