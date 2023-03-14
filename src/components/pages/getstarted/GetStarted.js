@@ -34,7 +34,7 @@ export const GetStarted = () => {
           "https://bookingapptrial.azurewebsites.net/register",
           inputs
         );
-        navigate("/login");
+        navigate("/sign-in");
       } else {
         setError("Password does not match.");
       }
