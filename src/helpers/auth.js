@@ -4,5 +4,5 @@ export const logoutFunc = () => {
 
 export const setupLogin = (token, user) => {
   localStorage.setItem("token", token);
-  localStorage.setItem("user", user);
+  localStorage.setItem("user", JSON.stringify(user));
 };
