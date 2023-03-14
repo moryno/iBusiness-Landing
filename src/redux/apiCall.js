@@ -2,6 +2,7 @@ import { loginStart, loginSuccess, loginFailure } from "./userSlice";
 import { setupLogin } from "../helpers/auth.js";
 import { logoutFunc } from "../helpers/auth.js";
 import axios from "axios";
+import { homeWebsite } from "../helpers/requestMethod";
 
 export const login = async (dispatch, user) => {
   dispatch(loginStart());
@@ -13,10 +14,10 @@ export const login = async (dispatch, user) => {
         withCredentials: true,
       }
     );
-    console.log(data);
-    // setupLogin(data?.token);
-    // dispatch(loginSuccess(data));
-    // window.location.replace("/");
+
+    setupLogin(data?.token);
+    dispatch(loginSuccess(data));
+    window.location.href = homeWebsite;
   } catch (error) {
     dispatch(loginFailure());
     logoutFunc();
