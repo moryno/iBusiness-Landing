@@ -30,7 +30,10 @@ export const GetStarted = () => {
     event.preventDefault();
     try {
       if (inputs.password === inputs.confirmPassword) {
-        await axios.post("http://192.168.1.200:7030/register", inputs);
+        await axios.post(
+          "https://bookingapptrial.azurewebsites.net/register",
+          inputs
+        );
         navigate("/login");
       } else {
         setError("Password does not match.");
